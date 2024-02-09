@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="rus">
+    <head>
+        <meta charset="utf-8">
+        <title>Проект: Кибербезопасность</title>
+        <link rel="icon" href="image\icons.png" type="image/x-icon">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+
+            header {
+                display: flex;
+                justify-content: space-evenly;
+                background-color: red;
+                flex-direction: row;
+                width: 100%;
+                height: 100px;
+                align-items: center;
+                color: white;
+                text-shadow: 3px 1px 0px black;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            footer {
+                margin: 0;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                background-color: red;
+                color: white;
+                text-shadow: 1px 1px 0px black;
+                font-weight: bold;
+                width: 100%;
+                height: 100%;    
+            }
+
+            button {
+                border-radius: 15px 10px;
+                padding: 20px;
+                background-color: rgb(253, 61, 61);
+                border-width: 0;
+                transition-duration: 1s;
+                color: white;
+            }
+
+            button:hover {
+                background-color: white;
+                color: red;
+            }
+
+            .theory {
+                transition:  1s;
+            }
+
+            .theory:hover {
+                transform: scale(1.5);
+            }
+
+            .mentors {
+                transition: 1s;
+            }
+
+            .mentors:hover {
+                transform: scale(1.5);
+            }
+
+            .firstEvent {
+                transition: 1s;
+            }
+
+            .firstEvent:hover {
+                transform: scale(1.5);
+            }
+
+            .firstResult {
+                transition: 1s;
+            }
+
+            .firstResult:hover {
+                transform: scale(1.5);
+            }
+
+            .secondEvent {
+                transition: 1s;
+            }
+
+            .secondEvent:hover {
+                transform: scale(1.5);
+            }
+
+            .secondResult {
+                transition: 1s;
+            }
+
+            .secondResult:hover {
+                transform: scale(1.5);
+            }
+
+            .end {
+                transition: 1s;
+            }
+
+            .end:hover {
+                transform: scale(1.5);
+            }
+
+            .logo {
+                width: 80px;
+                height: 80px;
+                opacity: 1;
+                transition-duration: 1s;
+            }
+
+            .logo:hover {
+                animation: logoAnim 2s ease 0s 1 normal forwards;
+            }
+
+            @keyframes logoAnim {
+                0% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="image/logo.png" alt="РДДМ логотип" class="logo">
+    
+            <a herf="/">
+                <button class="theory">Кибербезопасность</button>
+            </a>
+            <a href="mentors/">
+                <button class="mentors">Вирусы</button>  
+            </a>
+            <a href="event1/">
+                <button class="firstEvent">Способы распространения</button>
+            </a>
+            <a href="result1/">
+                <button class="firstResult">Предупредение и защита</button>
+            </a>
+            <a href="event2/">
+                <button class="secondEvent">Фишинг</button>
+            </a>
+            <a href="result2/">
+                <button class="secondResult">Социальная инженерия</button>
+            </a>
+            <a href="end/">
+                <button class="end">Кибербуллинг</button>
+            </a>
+        </header>
+        <div class="signs_of_malware_infection">
+            <h1 class="sings">Признаки заражения вредоносным ПО</h1>
+            <ol class="infection">
+                <li class="infection slow">Медленная работа, сбои и зависание компьютера</li>
+                <li class="infection death">“Синий экран смерти”</li>
+                <li class="infection auto">Автоматическое открытие или закрытие или самостоятельное изменение программ</li>
+                <li class="infection noplace">Отсутствие места для хранения</li>
+                <li class="infection windows">Увеличение количества всплывающих окон, панелей инструментов и нежелательных программ</li>
+                <li class="infection email">Отправка электронных писем и нежелательных сообщений без вашего ведома</li>
+            </ol>
+        </div>
+        <div class="protect_cyber_threat">
+            <h1 class="cyber_threat">Как защитить себя от киберугроз?</h1>
+            <ol class="protect">
+                <li class="protect antivirus">Установите антивирусное программное обеспечение</li>
+                <li class="protect brandmauwer">Используйте брандмауэр</li>
+                <li class="protect url">Не открывайте подозрительные вложения и ссылки</li>
+                <li class="protect password">Используйте сильные пароли</li>
+                <li class="protect oc">Регулярно обновляйте операционную систему и другие программы</li>
+                <li class="protect utility">Используйте утилиты для защиты</li>
+                <li class="protect download">Будьте осторожны при скачивании файлов</li>
+                <li class="protect data">Резервируйте свои данные</li>
+            </ol>
+        </div>
+        <footer>
+            <h1>Проект: Кибербезопасность</h1>
+        </footer>
+    </body>
+</html>

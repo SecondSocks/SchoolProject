@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="rus">
+    <head>
+        <meta charset="utf-8">
+        <title>Проект: Кибербезопасность</title>
+        <link rel="icon" href="image\icons.png" type="image/x-icon">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+
+            header {
+                display: flex;
+                justify-content: space-evenly;
+                background-color: red;
+                flex-direction: row;
+                width: 100%;
+                height: 100px;
+                align-items: center;
+                color: white;
+                text-shadow: 3px 1px 0px black;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            footer {
+                margin: 0;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                background-color: red;
+                color: white;
+                text-shadow: 1px 1px 0px black;
+                font-weight: bold;
+                width: 100%;
+                height: 100%;    
+            }
+
+            button {
+                border-radius: 15px 10px;
+                padding: 20px;
+                background-color: rgb(253, 61, 61);
+                border-width: 0;
+                transition-duration: 1s;
+                color: white;
+            }
+
+            button:hover {
+                background-color: white;
+                color: red;
+            }
+
+            .theory {
+                transition:  1s;
+            }
+
+            .theory:hover {
+                transform: scale(1.5);
+            }
+
+            .mentors {
+                transition: 1s;
+            }
+
+            .mentors:hover {
+                transform: scale(1.5);
+            }
+
+            .firstEvent {
+                transition: 1s;
+            }
+
+            .firstEvent:hover {
+                transform: scale(1.5);
+            }
+
+            .firstResult {
+                transition: 1s;
+            }
+
+            .firstResult:hover {
+                transform: scale(1.5);
+            }
+
+            .secondEvent {
+                transition: 1s;
+            }
+
+            .secondEvent:hover {
+                transform: scale(1.5);
+            }
+
+            .secondResult {
+                transition: 1s;
+            }
+
+            .secondResult:hover {
+                transform: scale(1.5);
+            }
+
+            .end {
+                transition: 1s;
+            }
+
+            .end:hover {
+                transform: scale(1.5);
+            }
+
+            .logo {
+                width: 80px;
+                height: 80px;
+                opacity: 1;
+                transition-duration: 1s;
+            }
+
+            .logo:hover {
+                animation: logoAnim 2s ease 0s 1 normal forwards;
+            }
+
+            @keyframes logoAnim {
+                0% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="image/logo.png" alt="РДДМ логотип" class="logo">
+    
+            <a herf="/">
+                <button class="theory">Кибербезопасность</button>
+            </a>
+            <a href="mentors/">
+                <button class="mentors">Вирусы</button>  
+            </a>
+            <a href="event1/">
+                <button class="firstEvent">Способы распространения</button>
+            </a>
+            <a href="result1/">
+                <button class="firstResult">Предупредение и защита</button>
+            </a>
+            <a href="event2/">
+                <button class="secondEvent">Фишинг</button>
+            </a>
+            <a href="result2/">
+                <button class="secondResult">Социальная инженерия</button>
+            </a>
+            <a href="end/">
+                <button class="end">Кибербуллинг</button>
+            </a>
+        </header>
+            <div class="kinds_of_bad_po">
+                <span class="spy_po"><h1 class="spy">Шпионские программы</h1>
+                    <p class="theory_of_spy">
+                        <b>Шпиоснкие программы</b> - общий термин для целого ряда вредоносных программ, 
+                        которые позволяют следить за действиями пользователя в сети Интернет, 
+                        а также собирать его конфиденциальные данные
+                    </p>
+                    <p class="kind"><b>Виды:</b></p>
+                    <ul class="kinds_of_spy">
+                        <li class="kinds_of_spy keylogger">
+                            <b>Keylogger</b> - шпионское ПО, которое наблюдает за действиями зараженного устройства на клавиатуре. 
+                            Они собирают информацию о посещаемых веб-сайтах, историю поиска в интернете и учетные данные.
+                        </li>
+                        <li class="kinds_of_spy stiller">
+                            <b>Стиллер</b> - имена пользователей и пароли, номера кредитных карт,
+                            адреса электронной почты и т. д. Они также могут рассылать фишинговые письма вашим контактам.
+                        </li>
+                        <li class="kinds_of_spy bank_trojan">
+                            <b>Банковские трояны</b> - это программы, которые изменяют веб-страницы, чтобы воспользоваться уязвимостями браузеров. 
+                            Они задействуют поддельные банковские сайты, через которые жертвы осуществляют финансовые операции, 
+                            и фиксируют нажатия клавиш, чтобы похитить учетные данные. 
+                        </li>
+                    </ul>
+                    <p class="example"><b>Примеры:</b> Fireball, Appearch, Trojan BPlug</p>
+                </span>
+                <span class="trojan_po">
+                    <h1 class="trojan">Троянские программы</h1>
+                    <p class="theory_of_trojan">
+                        <b>Троянские программы</b> - программы, маскирующиеся под легальное программное обеспечение, 
+                        чтобы обманом заставить пользователей запустить вредоносные программы на компьютере. 
+                        Троянские программы – это, своего рода, точки входа злоумышленников в систему. В отличие от червей, им для работы необходимо устройство. 
+                        После установки троянской программы на устройство злоумышленники могут использовать ее для удаления, 
+                        изменения и сбора данных с устройства в рамках ботнета, а также для слежки за устройством и получения доступа к сети.
+                    </p>
+                    <p class="kind1"><b>Виды:</b></p>
+                    <ol class="kind_of_trojan">
+                        <li class="kind_of_trojan rat">RAT</li>
+                        <li class="kind_of_trojan racketeer">Вымогатели</li>
+                        <li class="kind_of_trojan shifr">Шифровальщики</li>
+                        <li class="kind_of_trojan download">Загрузчики</li>
+                        <li class="kind_of_trojan deactivator">Дезактиваторы систем защиты</li>
+                        <li class="kind_of_trojan banker">Банкеры</li>
+                        <li class="kind_of_trojan DDoS">DDoS-трояны</li>
+                    </ol>
+                    <p class="example1"><b>Примеры:</b> Trojan.Encoder.567, Trojan.Downloader18.52977, Trojan.PWS.Steeller.13025</p>
+                </span>
+                <span class="virus_po">
+                    <h1 class="virus">Вирусы и черви</h1>
+                    <p class="theory_of_virus">
+                        <b>Вирус</b> - это фрагмент кода, который вставляется в приложение и запускается при его запуске. 
+                        Попав в сеть, вирус может использоваться для кражи конфиденциальных данных, 
+                        запуска DDoS-атак или атак программ-вымогателей. 
+                        Обычно вирус распространяется через зараженные веб-сайты, при совместном доступе к файлам, 
+                        при загрузке зараженных вложений электронной почты. 
+                        Вирус бездействует до момента активации зараженного файла или программы. 
+                        После этого вирус начинает распространяться в системе.
+                    </p>
+                    <p class="example2">
+                        <b>Примеры:</b> Stuxnet, Brain, Mindspark
+                    </p>
+
+                    <p class="theory_of_worm">
+                        <b>Черви</b> - это один из наиболее часто встречающихся типов вредоносных программ, 
+                        распространяющихся по компьютерным сетям, используя уязвимости операционной системы. 
+                        Черви представляют собой отдельные программы, распространяющиеся путем самокопирования с целью заражения других компьютеров, 
+                        при этом никаких действий со стороны пользователей или злоумышленников не требуется. Благодаря способности быстро распространяться, 
+                        черви часто используются для выполнения фрагментов кода, созданного для повреждения системы, например, 
+                        они могут удалять файлы в системе, шифровать данные для атаки программы-вымогателя, красть информацию и создавать ботнеты. 
+                    </p>
+                    <p class="example3">
+                        <b>Примеры:</b> P2P-worm, Email-worm, Virus 
+                    </p>
+                </span>
+                <span class="shifr_po">
+                    <h1 class="shifr">Программы-вымогатели и программы-шифровальщики</h1>
+                    <p class="theory_of_shifr">
+                        <b>Программы-вымогатели</b> - это вредоносные программы, 
+                        осуществляющие блокировку или отказ доступа пользователей к системе или данным до момента выплаты выкупа. 
+                        Программы-шифровальщики – это тип программ-вымогателей, 
+                        выполняющих шифрование пользовательских файлов и требующих оплаты в определенный срок и часто в цифровой валюте, например, в биткойнах. 
+                        Программы-вымогатели уже много лет представляют угрозу для компаний всех отраслей. 
+                        По мере того как все больше компаний переходят на цифровые технологии, 
+                        вероятность стать жертвой атак программ-вымогателей значительно возрастает.
+                    </p>
+                    <p class="theory_of_shifr1">
+                        <b>Программы-шифровальщик</b> - программа-вымогатель, 
+                        которая шифрует данные на устройстве пользователя и требует выкуп за их восстановление
+                    </p>
+                    <p class="example4">
+                        <b>Примеры:</b> Maze1, WannaCry3, Locky4
+                    </p>
+                </span>
+                <span class="ending">
+                    <h1 class="sum_of_virus">Все перечисленные виды вредоносного ПО подразделяются на:</h1>
+                    <ul class="summ">
+                        <li class="summ bad_po">Потенциально нежелательные программы</li>
+                        <li class="summ gybrid">Гибридные вредоносные программы</li>
+                        <li class="summ nonfiles">Бесфайловые программы</li>
+                        <li class="summ logic_bomb">Логические бомбы</li>
+                    </ul>
+                </span>
+            </div>
+        <footer>
+            <h1>Хитров Евгений Иванович г.Асино 2024 год</h1>
+        </footer>
+    </body>
+</html>

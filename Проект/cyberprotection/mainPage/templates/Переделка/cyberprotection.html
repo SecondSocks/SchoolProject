@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="rus">
+    <head>
+        <meta charset="utf-8">
+        <title>Проект: Кибербезопасность</title>
+        <link rel="icon" href="image\icons.png" type="image/x-icon">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+
+            header {
+                display: flex;
+                justify-content: space-evenly;
+                background-color: red;
+                flex-direction: row;
+                width: 100%;
+                height: 100px;
+                align-items: center;
+                color: white;
+                text-shadow: 3px 1px 0px black;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            footer {
+                margin: 0;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                background-color: red;
+                color: white;
+                text-shadow: 1px 1px 0px black;
+                font-weight: bold;
+                width: 100%;
+                height: 100%;    
+            }
+
+            button {
+                border-radius: 15px 10px;
+                padding: 20px;
+                background-color: rgb(253, 61, 61);
+                border-width: 0;
+                transition-duration: 1s;
+                color: white;
+            }
+
+            button:hover {
+                background-color: white;
+                color: red;
+            }
+
+            .theory {
+                transition:  1s;
+            }
+
+            .theory:hover {
+                transform: scale(1.5);
+            }
+
+            .mentors {
+                transition: 1s;
+            }
+
+            .mentors:hover {
+                transform: scale(1.5);
+            }
+
+            .firstEvent {
+                transition: 1s;
+            }
+
+            .firstEvent:hover {
+                transform: scale(1.5);
+            }
+
+            .firstResult {
+                transition: 1s;
+            }
+
+            .firstResult:hover {
+                transform: scale(1.5);
+            }
+
+            .secondEvent {
+                transition: 1s;
+            }
+
+            .secondEvent:hover {
+                transform: scale(1.5);
+            }
+
+            .secondResult {
+                transition: 1s;
+            }
+
+            .secondResult:hover {
+                transform: scale(1.5);
+            }
+
+            .end {
+                transition: 1s;
+            }
+
+            .end:hover {
+                transform: scale(1.5);
+            }
+
+            .logo {
+                width: 80px;
+                height: 80px;
+                opacity: 1;
+                transition-duration: 1s;
+            }
+
+            .logo:hover {
+                animation: logoAnim 2s ease 0s 1 normal forwards;
+            }
+
+            @keyframes logoAnim {
+                0% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image/logo.png" alt="РДДМ логотип" class="logo">
+
+        <a herf="/">
+            <button class="theory">Кибербезопасность</button>
+        </a>
+        <a href="mentors/">
+            <button class="mentors">Вирусы</button>  
+        </a>
+        <a href="event1/">
+            <button class="firstEvent">Способы распространения</button>
+        </a>
+        <a href="result1/">
+            <button class="firstResult">Предупредение и защита</button>
+        </a>
+        <a href="event2/">
+            <button class="secondEvent">Фишинг</button>
+        </a>
+        <a href="result2/">
+            <button class="secondResult">Социальная инженерия</button>
+        </a>
+        <a href="end/">
+            <button class="end">Кибербуллинг</button>
+        </a>
+    </header>
+    <div class="cyberprotection">
+        <h1 class="cp">Кибербезопасность</h1>
+        <p class="theory_of_cp">
+            <b>Кибербезопасность</b> – это совокупность методов и практик защиты от атак злоумышленников для компьютеров, 
+            серверов, мобильных устройств, электронных систем, сетей и данных. 
+            Кибербезопасность находит применение в самых разных областях, от бизнес-сферы до мобильных технологий. 
+            В этом направлении можно выделить несколько основных категорий:
+        </p>
+        <ul class="kinds_of_cp">
+            <li class="kinds_of_cp web">Безопасность сетей</li>
+            <li class="kinds_of_cp app">Безопасность приложений</li>
+            <li class="kinds_of_cp info">Безопасность информации</li>
+            <li class="kinds_of_cp oc">Операционная безопансость</li>
+            <li class="kinds_of_cp understand">Повышение осведомленности</li>
+        </ul>
+        <p class="suppose">
+            Кибербезопасность в жизни решает проблемы с распространением киберугроз. 
+            Всего киберугроз существует три вида:
+        </p>
+        <ul class="cyber_threat">
+            <li class="cyber_threat cybercrime">
+                <b>Киберпреступление</b> - действия, организованные одним или несколькими злоумышленниками с целью атаковать систему, 
+                чтобы нарушить ее работу или извлечь финансовую выгоду.
+            </li>
+            <li class="cyber_threat cyber_attack">
+                <b>Кибератака</b> – действия, нацеленные на сбор информации, 
+                в основном политического характера.
+            </li>
+            <li class="cyber_threat cyberterror">
+                <b>Кибертерроризм</b> - действия, направленные на дестабилизацию электронных систем с целью вызвать страх или панику
+            </li>
+        </ul>
+        <p class="bad_po">
+            Зачастую киберпреступники для достижения своих целей используют <strong>вредоносное программное обеспечение</strong>.
+        </p>
+        <p class="theory_of_bad_po">
+            <b>Вредоносные программы</b> - это программы, намеренно разработанные и внедряемые для нанесения ущерба компьютерам и компьютерным системам. 
+            Если работа программы повлекла непреднамеренный ущерб , это обычно называют программной ошибкой.
+        </p>
+        <p class="kind_bad_po"><strong>Типы вредоносного ПО:</strong></p>
+        <ul class="kinds_of_bad_po">
+            <li class="kinds_of_bad_po spy">Шпионские программы</li>
+            <li class="kinds_of_bad_po ad">Рекламные программы</li>
+            <li class="kinds_of_bad_po trojan">Троянские программы</li>
+            <li class="kinds_of_bad_po virus">Черви и вирусы</li>
+            <li class="kinds_of_bad_po shifr">Программы-вымогатели и программы-шифровальщики</li>
+        </ul>
+    </div>
+    <footer>
+        <h1>Проект: Кибербезопасность</h1>
+    </footer>
+</body>
+</html>

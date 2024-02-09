@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="rus">
+    <head>
+        <meta charset="utf-8">
+        <title>Проект: Кибербезопасность</title>
+        <link rel="icon" href="image\icons.png" type="image/x-icon">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+
+            header {
+                display: flex;
+                justify-content: space-evenly;
+                background-color: red;
+                flex-direction: row;
+                width: 100%;
+                height: 100px;
+                align-items: center;
+                color: white;
+                text-shadow: 3px 1px 0px black;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            footer {
+                margin: 0;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                background-color: red;
+                color: white;
+                text-shadow: 1px 1px 0px black;
+                font-weight: bold;
+                width: 100%;
+                height: 100%;    
+            }
+
+            button {
+                border-radius: 15px 10px;
+                padding: 20px;
+                background-color: rgb(253, 61, 61);
+                border-width: 0;
+                transition-duration: 1s;
+                color: white;
+            }
+
+            button:hover {
+                background-color: white;
+                color: red;
+            }
+
+            .theory {
+                transition:  1s;
+            }
+
+            .theory:hover {
+                transform: scale(1.5);
+            }
+
+            .mentors {
+                transition: 1s;
+            }
+
+            .mentors:hover {
+                transform: scale(1.5);
+            }
+
+            .firstEvent {
+                transition: 1s;
+            }
+
+            .firstEvent:hover {
+                transform: scale(1.5);
+            }
+
+            .firstResult {
+                transition: 1s;
+            }
+
+            .firstResult:hover {
+                transform: scale(1.5);
+            }
+
+            .secondEvent {
+                transition: 1s;
+            }
+
+            .secondEvent:hover {
+                transform: scale(1.5);
+            }
+
+            .secondResult {
+                transition: 1s;
+            }
+
+            .secondResult:hover {
+                transform: scale(1.5);
+            }
+
+            .end {
+                transition: 1s;
+            }
+
+            .end:hover {
+                transform: scale(1.5);
+            }
+
+            .logo {
+                width: 80px;
+                height: 80px;
+                opacity: 1;
+                transition-duration: 1s;
+            }
+
+            .logo:hover {
+                animation: logoAnim 2s ease 0s 1 normal forwards;
+            }
+
+            @keyframes logoAnim {
+                0% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="image/logo.png" alt="РДДМ логотип" class="logo">
+    
+            <a herf="/">
+                <button class="theory">Кибербезопасность</button>
+            </a>
+            <a href="mentors/">
+                <button class="mentors">Вирусы</button>  
+            </a>
+            <a href="event1/">
+                <button class="firstEvent">Способы распространения</button>
+            </a>
+            <a href="result1/">
+                <button class="firstResult">Предупредение и защита</button>
+            </a>
+            <a href="event2/">
+                <button class="secondEvent">Фишинг</button>
+            </a>
+            <a href="result2/">
+                <button class="secondResult">Социальная инженерия</button>
+            </a>
+            <a href="end/">
+                <button class="end">Кибербуллинг</button>
+            </a>
+        </header>
+        <div class="methods_of_distribution">
+            <h1 class="distribution">Способы распространения</h1>
+            <p class="theory_of_ditribution">
+                Злоумышленники каждый год, начиная с 1971, разрабатывают вирусы, придумывают различные способы распространения, 
+                чтобы нанести большой вред пользователям или компаниям. К 2024 году было придумано большое множество ухищрений, 
+                лишь бы проникнуть в систему ПК ил серверов. Так какие бывают способы распространения?
+            </p>
+        </div>
+        <div class="email_distribution">
+            <p class="email">
+                <b>Электронная почта.</b> В случае взлома электронной почты вредоносные программы могут отправлять с вашего адреса письма 
+                с зараженными вложениями или ссылками на вредоносные веб-сайты. Когда получатель открывает вложение или переходит по ссылке, 
+                вредоносная программа устанавливается на его компьютер и распространяется дальше.   
+            </p>
+        </div>
+        <div class="flash_distribution">
+            <p class="flash">
+                <b>Физические носители.</b> Злоумышленники могут загружать вредоносные программы на USB-накопители и ждать, 
+                пока ничего не подозревающие жертвы подключат их к компьютерам. Этот прием часто используется в корпоративном шпионаже.
+            </p>
+        </div>
+        <div class="windows_distribution">
+            <p class="windows">
+                <b>Всплывающие окна.</b> Этот способ распространения вредоносных программ включает ложные оповещения системы безопасности. 
+                Они предлагают загрузить поддельные программы безопасности, которые в некоторых случаях также могут оказаться вредоносными.
+            </p>
+        </div>
+        <div class="wickness_distribution">
+            <p class="wickness">
+                <b>Уязвимости.</b> Дефекты безопасности системы могут обеспечить несанкционированный доступ вредоносных программ к компьютеру, 
+                оборудованию или сети.
+            </p>
+        </div>
+        <div class="backdoor_distribution">
+            <p class="backdoor">
+                <b>Бэкдоры.</b> Преднамеренно или непреднамеренно встроенные дефекты программного обеспечения, 
+                оборудования, сетей или системной безопасности.
+            </p>
+        </div>
+        <div class="downlaod_distribution">
+            <p class="download">
+                <b>Заражение путем скрытой загрузки.</b> Непреднамеренная загрузка программного обеспечения с ведома пользователя или без него.
+            </p>
+        </div>
+        <div class="privelegy_distribution">
+            <p class="privelegy">
+                <b>Эскалация привелегий.</b> Ситуация, когда злоумышленник получает расширенный доступ к компьютеру или сети, 
+                а затем использует его для атаки.
+            </p>
+        </div>
+        <div class="uniformity_distribution">
+            <p class="uniformity">
+                <b>Однородность.</b> Если все системы работают под управлением одной операционной системы и подключены к одной сети, 
+                увеличивается риск распространения червей на другие компьютеры.
+            </p>
+        </div>
+        <div class="combo_distribution">
+            <p class="combo">
+                <b>Комбинированные угрозы.</b> Пакеты вредоносных программ, объединяющие характеристики различных типов вредоносных программ, 
+                что затрудняет их обнаружение и устранение, поскольку они могут использовать различные уязвимости.
+            </p>
+        </div>
+        <footer>
+            <h1>Проект: Кибербезопасность</h1>
+        </footer>
+    </body>
+</html>

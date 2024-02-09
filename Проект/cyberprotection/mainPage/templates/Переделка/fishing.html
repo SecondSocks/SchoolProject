@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="rus">
+    <head>
+        <meta charset="utf-8">
+        <title>Проект: Кибербезопасность</title>
+        <link rel="icon" href="image\icons.png" type="image/x-icon">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+
+            header {
+                display: flex;
+                justify-content: space-evenly;
+                background-color: red;
+                flex-direction: row;
+                width: 100%;
+                height: 100px;
+                align-items: center;
+                color: white;
+                text-shadow: 3px 1px 0px black;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            footer {
+                margin: 0;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                background-color: red;
+                color: white;
+                text-shadow: 1px 1px 0px black;
+                font-weight: bold;
+                width: 100%;
+                height: 100%;    
+            }
+
+            button {
+                border-radius: 15px 10px;
+                padding: 20px;
+                background-color: rgb(253, 61, 61);
+                border-width: 0;
+                transition-duration: 1s;
+                color: white;
+            }
+
+            button:hover {
+                background-color: white;
+                color: red;
+            }
+
+            .theory {
+                transition:  1s;
+            }
+
+            .theory:hover {
+                transform: scale(1.5);
+            }
+
+            .mentors {
+                transition: 1s;
+            }
+
+            .mentors:hover {
+                transform: scale(1.5);
+            }
+
+            .firstEvent {
+                transition: 1s;
+            }
+
+            .firstEvent:hover {
+                transform: scale(1.5);
+            }
+
+            .firstResult {
+                transition: 1s;
+            }
+
+            .firstResult:hover {
+                transform: scale(1.5);
+            }
+
+            .secondEvent {
+                transition: 1s;
+            }
+
+            .secondEvent:hover {
+                transform: scale(1.5);
+            }
+
+            .secondResult {
+                transition: 1s;
+            }
+
+            .secondResult:hover {
+                transform: scale(1.5);
+            }
+
+            .end {
+                transition: 1s;
+            }
+
+            .end:hover {
+                transform: scale(1.5);
+            }
+
+            .logo {
+                width: 80px;
+                height: 80px;
+                opacity: 1;
+                transition-duration: 1s;
+            }
+
+            .logo:hover {
+                animation: logoAnim 2s ease 0s 1 normal forwards;
+            }
+
+            @keyframes logoAnim {
+                0% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="image/logo.png" alt="РДДМ логотип" class="logo">
+    
+            <a herf="/">
+                <button class="theory">Кибербезопасность</button>
+            </a>
+            <a href="mentors/">
+                <button class="mentors">Вирусы</button>  
+            </a>
+            <a href="event1/">
+                <button class="firstEvent">Способы распространения</button>
+            </a>
+            <a href="result1/">
+                <button class="firstResult">Предупредение и защита</button>
+            </a>
+            <a href="event2/">
+                <button class="secondEvent">Фишинг</button>
+            </a>
+            <a href="result2/">
+                <button class="secondResult">Социальная инженерия</button>
+            </a>
+            <a href="end/">
+                <button class="end">Кибербуллинг</button>
+            </a>
+        </header>
+        <div class="fishing">
+            <p class="theory_of_fishing">
+                <b>Фишинг</b> - - это вид интернет-мошенничества, используемого чтобы получить идентификационные данные пользователей. 
+                Он применяется для кражи паролей, номеров карт, банковских счетов и другой конфиденциальной информации.
+            </p>
+            <p class="rule_of_fishing">
+                Как правило, фишинговая атака представляет собой выдачу фейковых сайтов, имитирующих интернет-страницы популярных компаний: 
+                соцсетей, интернет-магазинов, стриминговых сервисов и т.д. Хакеры рассчитывают на то, 
+                что пользователь не заметит подделки и укажет на странице личные данные: реквизиты карты, логин и пароль, номер телефона. 
+                Если человек сделает это, мошенники получат его данные.
+            </p>
+        </div>
+        <div class="type_of_fishing">
+            <span class="fake_site">
+                <p class="distribution_method_fake_site">
+                    Способы распротсранения сайта подделки:
+                </p>
+                <ol class="fake_site">
+                    <li class="fake_site spam">Приходят в рассылке по электронной почте или в мессенджерах</li>
+                    <li class="fake_site search">Выдаются в поиске</li>
+                </ol>
+            </span>
+            <span class="method_of_collect_info">
+                <p class="collect_info_method">
+                    Метод сбора информации: 
+                </p>
+                <ol class="collect_info">
+                    <li class="collect_info fake_site">Фейковый сайт</li>
+                    <li class="collect_info bad_file">Вредоносный файл</li>
+                </ol>
+            </span>
+        </div>
+        <div class="victim">
+            <p class="group_ib">
+                Group IB отмечает, что жертвами фишинговых атак могут быть не только обычные пользователи, 
+                но и предприниматели, которые в поисках товара зашли на созданные злоумышленниками сайты-клоны производителей.<br>
+
+                Также жертвами могут стать бухгалтеры и финансисты, работающие с системами ДБО (дистанционного банковского обслуживания). 
+                Их атакуют через популярные профильные ресурсы, которые подделывают или заражают вредоносными программами.
+            </p>
+        </div>
+        <div class="protect_without_fishing">
+            <h1 class="not_fishing_victim">Как не стать жертвой фишинга?</h1>
+            <ol class="protect_method">
+                <li class="protect_method url">
+                    Не переходите по ссылкам, присланным в подозрительных или непонятных сообщениях электронной почты, соцсетях и мессенджерах
+                </li>
+                <li class="protect_method download">
+                    Не загружайте вложенные файлы из сообщений, которых вы не ожидали
+                </li>
+                <li class="protect_method attention">
+                    Внимательно проанализируйте адрес сайта (URL), на который вы были переадресованы. 
+                    В большинстве случаев фишинга URL-адрес отличается от оригинального домена одним знаком 
+                    (например, заканчиваться на .com вместо .gov, или wiIdberries.ru вместо wildberries.ru с заглавной i вместо l).
+                </li>
+                <li class="protect_method update">
+                    Обновляйте браузер до последней версии;
+                </li>
+                <li class="protect_method domen">
+                    Проверьте домен на сайте tcinet.ru. Там можно узнать дату регистрации: как правило, мошеннические сайты живут несколько дней
+                </li>
+                <li class="protect_method online_buy">
+                    Не совершайте онлайн-покупки по предоплате на непроверенных сайтах
+                </li>
+                <li class="protect_method card">
+                    Для покупок в интернете используйте отдельную банковскую карту
+                </li>
+            </ol>
+        </div>
+        <footer>
+            <h1>Проект: Кибербезопасность</h1>
+        </footer>
+    </body>
+</html>

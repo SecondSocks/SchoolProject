@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="rus">
+    <head>
+        <meta charset="utf-8">
+        <title>Проект: Кибербезопасность</title>
+        <link rel="icon" href="image\icons.png" type="image/x-icon">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+
+            header {
+                display: flex;
+                justify-content: space-evenly;
+                background-color: red;
+                flex-direction: row;
+                width: 100%;
+                height: 100px;
+                align-items: center;
+                color: white;
+                text-shadow: 3px 1px 0px black;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            footer {
+                margin: 0;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                background-color: red;
+                color: white;
+                text-shadow: 1px 1px 0px black;
+                font-weight: bold;
+                width: 100%;
+                height: 100%;    
+            }
+
+            button {
+                border-radius: 15px 10px;
+                padding: 20px;
+                background-color: rgb(253, 61, 61);
+                border-width: 0;
+                transition-duration: 1s;
+                color: white;
+            }
+
+            button:hover {
+                background-color: white;
+                color: red;
+            }
+
+            .theory {
+                transition:  1s;
+            }
+
+            .theory:hover {
+                transform: scale(1.5);
+            }
+
+            .mentors {
+                transition: 1s;
+            }
+
+            .mentors:hover {
+                transform: scale(1.5);
+            }
+
+            .firstEvent {
+                transition: 1s;
+            }
+
+            .firstEvent:hover {
+                transform: scale(1.5);
+            }
+
+            .firstResult {
+                transition: 1s;
+            }
+
+            .firstResult:hover {
+                transform: scale(1.5);
+            }
+
+            .secondEvent {
+                transition: 1s;
+            }
+
+            .secondEvent:hover {
+                transform: scale(1.5);
+            }
+
+            .secondResult {
+                transition: 1s;
+            }
+
+            .secondResult:hover {
+                transform: scale(1.5);
+            }
+
+            .end {
+                transition: 1s;
+            }
+
+            .end:hover {
+                transform: scale(1.5);
+            }
+
+            .logo {
+                width: 80px;
+                height: 80px;
+                opacity: 1;
+                transition-duration: 1s;
+            }
+
+            .logo:hover {
+                animation: logoAnim 2s ease 0s 1 normal forwards;
+            }
+
+            @keyframes logoAnim {
+                0% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="image/logo.png" alt="РДДМ логотип" class="logo">
+    
+            <a herf="/">
+                <button class="theory">Кибербезопасность</button>
+            </a>
+            <a href="mentors/">
+                <button class="mentors">Вирусы</button>  
+            </a>
+            <a href="event1/">
+                <button class="firstEvent">Способы распространения</button>
+            </a>
+            <a href="result1/">
+                <button class="firstResult">Предупредение и защита</button>
+            </a>
+            <a href="event2/">
+                <button class="secondEvent">Фишинг</button>
+            </a>
+            <a href="result2/">
+                <button class="secondResult">Социальная инженерия</button>
+            </a>
+            <a href="end/">
+                <button class="end">Кибербуллинг</button>
+            </a>
+        </header>
+        <div class="cyberbulling">
+            <h1 class="cyberbull">Кибербуллинг</h1>
+            <p class="theory_of_cyberbulling">
+                <b>Кибербуллинг</b> - это запугивание и травля с использованием цифровых технологий. 
+                Он может проходить в социальных сетях, в приложениях для обмена сообщениями, на игровых платформах и мобильных телефонах. 
+                Это повторяющиеся эпизоды, цель которых - напугать, разозлить или опозорить тех, кого преследуют. 
+                В дальнейшем кибербуллинг будет входить в упоминание об кибербезопасности.
+            </p>
+            <p class="kind_of_cyberbulling">
+                Важно помнить, что кибербуллинг — это скорее общее определение для разных видов травли в интернете, 
+                и его не стоит путать с кибермоббингом и кибертравлей.
+            </p>
+            <ul class="kinds_of_cyberbull">
+                <li class="kinds_of_cyberbull cybermobbing">
+                    <b>Кибермоббинг</b> - вид насилия в цифровой среде, реализуемый с помощью электронного текста (сообщений и комментариев).
+                </li>
+                <li class="kinds_of_cyberbull cyberbulled">
+                    <b>Кибертравля</b> - причинение вреда человеку за счет длительного давления в интернет-пространстве: преследования, распространения слухов, запугивания.
+                </li>
+            </ul>
+        </div>
+        <span class="example_of_cyberbulling">
+            <h1 class="example_of">Примеры кибербуллинга</h1>
+            <p class="example">
+                Есть много способов сделать человеку больно. Например, написать токсичный комментарий под фотографией, 
+                оскорбить в групповом чате или на стенке в социальной сети, 
+                затроллить, выложить данные или подробности из личной жизни. 
+                Поводом для кибербуллинга чаще всего являются внешность, сексуальная ориентация и активность в интернете.<br><br>
+                Чаще всего человек не может сам защититься от кибербуллинга, 
+                но лишь небольшая часть пользователей готова поддержать жертву травли в сети. 
+                Исследователи выяснили, что:
+            </p>
+            <ul class="results">
+                <li class="results no_protect">
+                    52% респондентов никогда не заступались ни за кого в интернете
+                </li>
+                <li class="results support">
+                    65% считают публичную поддержку бессмысленной
+                </li>
+                <li class="results aggresive">
+                    13% боятся, что агрессия перекинется на них
+                </li>
+                <li class="results wickness">
+                    20% полагают, что они бессильны и ничего не могут сделать, чтобы поддержать пострадавшего от кибербуллинга.
+                </li>
+            </ul>
+        </span>
+        <span class="what_to_do">
+            <h1 class="what_do">Что делать при травле в интернете?</h1>
+            <p class="do">
+                Лучше всего обратиться к психологу, чтобы проработать проблему. 
+                Школьники могут получить поддержку у педагога-психолога, который работает в их учебном заведении. 
+                Чтобы защитить себя от агрессии, постарайтесь научиться отстаивать свои границы и говорить о своих чувствах. 
+                Не забывайте, что вы всегда можете прекратить общение с людьми, которые причиняют боль в интернете. 
+                Во всех социальных сетях есть функция блокировки нежелательных пользователей. 
+                Просто заблокируйте агрессора, тем самым закрыв ему доступ к дальнейшим негативным действиям.
+            </p>
+        </span>
+        <footer>
+            <h1>Проект: Кибербезопасность</h1>
+        </footer>
+    </body>
+</html>
