@@ -134,6 +134,157 @@
                 }
             }
 
+            .kinds_of_bad_po {
+                display: flex;
+                flex-direction: column;
+                font-size: 28px;
+                background-image: url("image/RDDMfon1.jpg"),  url("image/RDDMfon2.jpg"), url("image/RDDMfon3.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%, 100% 1080px, 100% 1080px, 100%;
+                background-position: top, center, bottom;
+            }
+
+            .spy_po {
+                margin-left: 20px;
+            }
+
+            .spy {
+                text-align: center;
+            }
+
+            .spy_image {
+                border-radius: 20px;
+            }
+
+            .theory_of_spy {
+                text-indent: 1cm;
+            }
+
+            .kind {
+                text-indent: 1cm;
+            }
+
+            .kinds_of_spy {
+                list-style-type: none;
+            }
+
+            .keylogger {
+                margin-bottom: 30px;
+            }
+
+            .stiller {
+                margin-bottom: 30px;
+            }
+
+            .example {
+                text-indent: 1cm;
+            }
+
+            .trojan_po {
+                margin-left: 20px;
+            }
+
+            .trojan {
+                text-align: center;
+            }
+
+            .theory_of_trojan {
+                text-indent: 1cm;
+            }
+
+            .trojan_image {
+                border-radius: 20px;
+            }
+
+            .kind_of_trojan {
+                list-style-type: disc;
+            }
+
+            .kind_of_trojan li::marker {
+                color: blue;
+                font-size: 30px;
+            }
+
+            .kind1 {
+                text-indent: 1cm;
+            }
+
+            .example1 {
+                text-indent: 1cm;
+            }
+
+            .virus_po {
+                margin-left: 20px;
+            }
+
+            .virus {
+                text-align: center;
+            }
+
+            .theory_of_virus {
+                text-indent: 1cm;
+            }
+
+            .virus_image {
+                border-radius: 20px;
+            }
+
+            .example2 {
+                text-indent: 1cm;
+            }
+
+            .theory_of_worm {
+                text-indent: 1cm;
+            }
+
+            .worm_image {
+                border-radius: 20px;
+            }
+
+            .example3 {
+                text-indent: 1cm;
+            }
+
+            .shifr_po {
+                margin-left: 20px;
+            }
+
+            .shifr {
+                text-align: center;
+            }
+
+            .theory_of_shifr {
+                text-indent: 1cm;
+            }
+
+            .theory_of_shifr1 {
+                text-indent: 1cm;
+            }
+
+            .shifr_image {
+                border-radius: 20px;
+            }
+
+            .shifr1_image {
+                border-radius: 20px;
+            }
+
+            .example4 {
+                text-indent: 1cm;
+            }
+
+            .ending {
+                margin-left: 20px;
+            }
+
+            .sum_of_virus {
+                text-align: center;
+            }
+
+            .summ li::marker {
+                color: blue;
+                font-size: 30px;
+            }
         </style>
     </head>
     <body>
@@ -163,12 +314,14 @@
             </a>
         </header>
             <div class="kinds_of_bad_po">
-                <span class="spy_po"><h1 class="spy">Шпионские программы</h1>
+                <span class="spy_po">
+                    <h1 class="spy">Шпионские программы</h1>
                     <p class="theory_of_spy">
                         <b>Шпиоснкие программы</b> - общий термин для целого ряда вредоносных программ, 
                         которые позволяют следить за действиями пользователя в сети Интернет, 
                         а также собирать его конфиденциальные данные
                     </p>
+                    <img class="spy_image" src="image/3.jpg" alt="Шпионская программа" widht="600" height="338">
                     <p class="kind"><b>Виды:</b></p>
                     <ul class="kinds_of_spy">
                         <li class="kinds_of_spy keylogger">
@@ -196,15 +349,16 @@
                         После установки троянской программы на устройство злоумышленники могут использовать ее для удаления, 
                         изменения и сбора данных с устройства в рамках ботнета, а также для слежки за устройством и получения доступа к сети.
                     </p>
+                    <img class="trojan_image" src="image/4.png" alt="Троянская программа" width="600" height="255">
                     <p class="kind1"><b>Виды:</b></p>
                     <ol class="kind_of_trojan">
-                        <li class="kind_of_trojan rat">RAT</li>
+                        <li class="kind_of_trojan rat">RAT (Remote Access Tool)</li>
                         <li class="kind_of_trojan racketeer">Вымогатели</li>
-                        <li class="kind_of_trojan shifr">Шифровальщики</li>
                         <li class="kind_of_trojan download">Загрузчики</li>
                         <li class="kind_of_trojan deactivator">Дезактиваторы систем защиты</li>
                         <li class="kind_of_trojan banker">Банкеры</li>
                         <li class="kind_of_trojan DDoS">DDoS-трояны</li>
+                        <li class="kind_of_trojan shifro">Шифровальщики</li>
                     </ol>
                     <p class="example1"><b>Примеры:</b> Trojan.Encoder.567, Trojan.Downloader18.52977, Trojan.PWS.Steeller.13025</p>
                 </span>
@@ -219,10 +373,10 @@
                         Вирус бездействует до момента активации зараженного файла или программы. 
                         После этого вирус начинает распространяться в системе.
                     </p>
+                    <img class="virus_image" src="image/5.jpg" alt="Вирусная программа" width="600px" height="353px">
                     <p class="example2">
                         <b>Примеры:</b> Stuxnet, Brain, Mindspark
                     </p>
-
                     <p class="theory_of_worm">
                         <b>Черви</b> - это один из наиболее часто встречающихся типов вредоносных программ, 
                         распространяющихся по компьютерным сетям, используя уязвимости операционной системы. 
@@ -231,6 +385,7 @@
                         черви часто используются для выполнения фрагментов кода, созданного для повреждения системы, например, 
                         они могут удалять файлы в системе, шифровать данные для атаки программы-вымогателя, красть информацию и создавать ботнеты. 
                     </p>
+                    <img class="worm_image" src="image/6.jpg" alt="Червь-программа" width="600px" height="337px">
                     <p class="example3">
                         <b>Примеры:</b> P2P-worm, Email-worm, Virus 
                     </p>
@@ -246,10 +401,12 @@
                         По мере того как все больше компаний переходят на цифровые технологии, 
                         вероятность стать жертвой атак программ-вымогателей значительно возрастает.
                     </p>
+                    <img class="shifr_image" src="image/7.jpg" alt="программа-вымогатель" width="600px" height="315px">
                     <p class="theory_of_shifr1">
                         <b>Программы-шифровальщик</b> - программа-вымогатель, 
                         которая шифрует данные на устройстве пользователя и требует выкуп за их восстановление
                     </p>
+                    <img class="shifr1_image" src="image/8.jpg" alt="Программа-шифровальщик" width="600px" height="337px">
                     <p class="example4">
                         <b>Примеры:</b> Maze1, WannaCry3, Locky4
                     </p>

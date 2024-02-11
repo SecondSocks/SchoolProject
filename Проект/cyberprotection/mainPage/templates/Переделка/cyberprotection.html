@@ -134,6 +134,71 @@
                     opacity: 1;
                 }
             }
+
+            span {
+                margin-left: 20px;
+            }
+
+            .cyberprotection {
+                display: flex;
+                flex-direction: column;
+                font-size: 28px;
+                background-image: url("image/RDDMfon1.jpg"), url("image/RDDMfon3.jpg");
+                background-position: top, bottom;
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+
+            .cp {
+                text-align: center;
+            }
+
+            .theory_of_cp {
+                text-indent: 1cm;
+                width: 100%;
+            }
+
+            .kinds_of_cp {
+                list-style-type: decimal;
+            }
+
+            .suppose {
+                text-indent: 1cm;
+            }
+
+            .cyber_threat {
+                list-style-type: none;
+            }
+            .cybercrime {
+                margin-bottom: 30px;
+            }
+            .cyber_attack {
+                margin-bottom: 30px;
+            }
+
+            .bad_po {
+                text-indent: 1cm;
+            }
+            .theory_of_bad_po {
+                text-indent: 1cm;
+            }
+
+            .kind_bad_po {
+                text-indent: 1cm;
+            }
+
+            .cp_image {
+                border-radius: 20px;
+            }
+
+            .bad_po_image {
+                border-radius: 20px;
+            }
+            .kinds_of_bad_po li::marker {
+                color: blue;
+                font-size: 50px
+            }
+
     </style>
 </head>
 <body>
@@ -163,52 +228,56 @@
         </a>
     </header>
     <div class="cyberprotection">
-        <h1 class="cp">Кибербезопасность</h1>
-        <p class="theory_of_cp">
-            <b>Кибербезопасность</b> – это совокупность методов и практик защиты от атак злоумышленников для компьютеров, 
-            серверов, мобильных устройств, электронных систем, сетей и данных. 
-            Кибербезопасность находит применение в самых разных областях, от бизнес-сферы до мобильных технологий. 
-            В этом направлении можно выделить несколько основных категорий:
-        </p>
-        <ul class="kinds_of_cp">
-            <li class="kinds_of_cp web">Безопасность сетей</li>
-            <li class="kinds_of_cp app">Безопасность приложений</li>
-            <li class="kinds_of_cp info">Безопасность информации</li>
-            <li class="kinds_of_cp oc">Операционная безопансость</li>
-            <li class="kinds_of_cp understand">Повышение осведомленности</li>
-        </ul>
-        <p class="suppose">
-            Кибербезопасность в жизни решает проблемы с распространением киберугроз. 
-            Всего киберугроз существует три вида:
-        </p>
-        <ul class="cyber_threat">
-            <li class="cyber_threat cybercrime">
-                <b>Киберпреступление</b> - действия, организованные одним или несколькими злоумышленниками с целью атаковать систему, 
-                чтобы нарушить ее работу или извлечь финансовую выгоду.
-            </li>
-            <li class="cyber_threat cyber_attack">
-                <b>Кибератака</b> – действия, нацеленные на сбор информации, 
-                в основном политического характера.
-            </li>
-            <li class="cyber_threat cyberterror">
-                <b>Кибертерроризм</b> - действия, направленные на дестабилизацию электронных систем с целью вызвать страх или панику
-            </li>
-        </ul>
-        <p class="bad_po">
-            Зачастую киберпреступники для достижения своих целей используют <strong>вредоносное программное обеспечение</strong>.
-        </p>
-        <p class="theory_of_bad_po">
-            <b>Вредоносные программы</b> - это программы, намеренно разработанные и внедряемые для нанесения ущерба компьютерам и компьютерным системам. 
-            Если работа программы повлекла непреднамеренный ущерб , это обычно называют программной ошибкой.
-        </p>
-        <p class="kind_bad_po"><strong>Типы вредоносного ПО:</strong></p>
-        <ul class="kinds_of_bad_po">
-            <li class="kinds_of_bad_po spy">Шпионские программы</li>
-            <li class="kinds_of_bad_po ad">Рекламные программы</li>
-            <li class="kinds_of_bad_po trojan">Троянские программы</li>
-            <li class="kinds_of_bad_po virus">Черви и вирусы</li>
-            <li class="kinds_of_bad_po shifr">Программы-вымогатели и программы-шифровальщики</li>
-        </ul>
+        <span>
+            <h1 class="cp">Кибербезопасность</h1>
+            <img class="cp_image" src="image/1.jpg" alt="Кибербезопасность" width="600px" height="338px">
+            <p class="theory_of_cp">
+                <b>Кибербезопасность</b> – это совокупность методов и практик защиты от атак злоумышленников для компьютеров, 
+                серверов, мобильных устройств, электронных систем, сетей и данных. 
+                Кибербезопасность находит применение в самых разных областях, от бизнес-сферы до мобильных технологий. 
+                В этом направлении можно выделить несколько основных категорий:
+            </p>
+            <ul class="kinds_of_cp">
+                <li class="kinds_of_cp web">Безопасность сетей</li>
+                <li class="kinds_of_cp app">Безопасность приложений</li>
+                <li class="kinds_of_cp info">Безопасность информации</li>
+                <li class="kinds_of_cp oc">Операционная безопансость</li>
+                <li class="kinds_of_cp understand">Повышение осведомленности</li>
+            </ul>
+            <p class="suppose">
+                Кибербезопасность в жизни решает проблемы с распространением киберугроз. 
+                Всего киберугроз существует три вида:
+            </p>
+            <ul class="cyber_threat">
+                <li class="cyber_threat cybercrime">
+                    <b>Киберпреступление</b> - действия, организованные одним или несколькими злоумышленниками с целью атаковать систему, 
+                    чтобы нарушить ее работу или извлечь финансовую выгоду.
+                </li>
+                <li class="cyber_threat cyber_attack">
+                    <b>Кибератака</b> – действия, нацеленные на сбор информации, 
+                    в основном политического характера.
+                </li>
+                <li class="cyber_threat cyberterror">
+                    <b>Кибертерроризм</b> - действия, направленные на дестабилизацию электронных систем с целью вызвать страх или панику
+                </li>
+            </ul>
+            <p class="bad_po">
+                Зачастую киберпреступники для достижения своих целей используют <strong>вредоносное программное обеспечение</strong>.
+            </p>
+            <p class="theory_of_bad_po">
+                <b>Вредоносные программы</b> - это программы, намеренно разработанные и внедряемые для нанесения ущерба компьютерам и компьютерным системам. 
+                Если работа программы повлекла непреднамеренный ущерб , это обычно называют программной ошибкой.
+            </p>
+            <img class="bad_po_image" src="image/2.png" alt="Вредонсное ПО" width="600" height="314">
+            <p class="kind_bad_po"><strong>Типы вредоносного ПО:</strong></p>
+            <ul class="kinds_of_bad_po">
+                <li class="kinds_of_bad_po spy">Шпионские программы</li>
+                <li class="kinds_of_bad_po ad">Рекламные программы</li>
+                <li class="kinds_of_bad_po trojan">Троянские программы</li>
+                <li class="kinds_of_bad_po virus">Черви и вирусы</li>
+                <li class="kinds_of_bad_po shifr">Программы-вымогатели и программы-шифровальщики</li>
+            </ul>
+        </span>
     </div>
     <footer>
         <h1>Проект: Кибербезопасность</h1>
